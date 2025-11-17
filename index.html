@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/52f65dff73.js" crossorigin="anonymous"></script>
+    <title>Bank Account</title>
+</head>
+<body>
+<!--Navigation-->
+    <a><img id="bankworldlogo" src="Images/Fake Bank Logo.png" alt="Bank World Logo"></a>
+    <nav id="mainnavigation">
+        <a class="navlink" href="index.html">Accounts</a>
+        <a class="navlink" href="index.html">Move Money</a>
+        <a class="navlink" href="index.html">Products</a>
+        <a class="navlink" href="index.html">Contact Us</a>
+        <a class="navlink" id="settings" href="index.html">Settings</a>
+        <a class="navlink" href="index.html">Log Out</a>
+    </nav>
+<!--Customer welcome info-->
+    <header id="welcomeheading">
+        <br><br><br>
+        <div></div>
+            <h1>Welcome, John Doe!</h1>
+        </div>
+        <div id="customerdetails">
+            <p>Customer number: 0800001066<br>Last Login: 01/01/1970</p>
+        </div>
+    </header>
+    <br><br><br><br><br>
+<!--Main grid of page-->
+    <main>
+        <div id="gridbox1">
+            <h2>Acount Overview:</h2>
+            <div>
+                <p class="acctype">Current Account</p><p class="accnumber">Account Number: 24680</p><p class="accbalance">&ensp;&#8356;484.32</p>
+                <button onclick="window.location.href = 'index.html'"><b>Manage Account</b></button>
+            </div>
+            <div>
+                <p class="acctype">Savings Account</p><p class="accnumber">Account Number: 13579</p><p class="accbalance">&ensp;&#8356;1,890.52</p>
+                <button onclick="window.location.href = 'index.html'"><b>Manage Account</b></button>
+            </div>
+            <div>
+                <p class="acctype">ISA</p><p class="accnumber">Account Number: 08642</p><p class="accbalance">&ensp;&#8356;6,923.45</p>
+                <button onclick="window.location.href = 'index.html'"><b>Manage Account</b></button>
+            </div>
+            <br>
+        </div>
+        <div id="gridbox2">
+            <h2>Quick Transfer:</h2>
+            <form>
+                <label>From:</label><br>
+                <select id="accfrom">
+                    <option value="noneselected">None Selected</option>
+                    <option value="24680">Current Account: 24680</option>
+                    <option value="Savings Account">Savings Account: 13579</option>
+                    <option value="ISA">ISA: 08642</option>
+                </select><br>
+                <label>To:</label><br>
+                <select id="accfrom">
+                    <option value="noneselected">None Selected</option>
+                    <option value="24680">Current Account: 24680</option>
+                    <option value="Savings Account">Savings Account: 13579</option>
+                    <option value="ISA">ISA: 08642</option>
+                </select><br>
+                <label>Amount:</label><br>
+                <input id="accamount" type="number"><br><br>
+                <input id="submitbutton" type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="gridbox3">
+            <h2>Our Products:</h2>
+            <a href="index.html"><i class="fa-solid fa-credit-card"></i>&ensp;Credit Cards</a><br>
+            <a href="index.html"><i class="fa-solid fa-piggy-bank"></i><abbr>&ensp;ISA's</abbr></i></a><br>
+            <a href="index.html"><i class="fa-solid fa-house"></i>&ensp;Mortgages</a><br>
+        </div>
+        <div id="gridbox4">
+            <h2><i class="fa-solid fa-money-bill-1"></i>&ensp;What can I borrow?</h2>
+            <div id="borrowbox">
+                <p>Based on your monetary history, you may be able to borrow up to &#8356;10,000 with an interest rate of 8%</p>
+                <button onclick="window.location.href = 'index.html'">ENQUIRE NOW</button>
+            </div>
+        </div>
+        
+    </main>
+        <a href="index.html"><aside id="chat">
+            <h5>CHAT <i class="fa-solid fa-comment"></i></h5>
+        </aside></a>
+<!--Footer-->
+    <footer>
+        <div id="address">
+            <h4>Head Office address:</h4><br>
+            <address>Bank World, <br>Bank Lane, <br>Bank Town, <br>Bank County, <br>Money Country</address>
+        </div>
+        <div id="map">
+            <h4>Head Office location:</h4><br>
+            <iframe width="100%" height="200" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=6%20Redlands%20Rd,%20Reading%20RG1%205EX+(House%20Finder)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </div>
+        <div id="contactus">
+            <form>
+                <label><b>Contact Us:</b></label><br>
+                <label>Full Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label>Contact E-mail</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label>Contact Phone</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+                <label>Reason for enquiry</label><br>
+                <textarea rows="2" cols="16"></textarea><br><br>
+                <input id="ContactSubmit" type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="customerquotes">
+            <h4>What our customers say:</h4><br>
+            <q>They hold onto my money very well. Too well...</q> - Ernest<br><br>
+            <q>I like seeing numbers go up</q> - Clive<br><br>
+            <q>I was given an Amazon voucher for saying this</q> - Ellis
+        </div>
+    </footer>
+</body>
+</html>
